@@ -1,0 +1,2 @@
+# Aprendizados da Semana
+Nesta semana aprendi muito com a Labenu, aprendi a usar o Git, GitHub, VScode e outras plataformas que vão nos auxiliar nessa jornada. Porém não só de conteúdo técnico vive um estudante da Labenu, aprendi um pouco mais sobre empregabilidadee e como serão os processos seletivos das empresas em geral, aprendi também a me respeitar, entendendo que cada pessoa **tem seu próprio tempo de aprendizado**. Obrigada Labenu!!
