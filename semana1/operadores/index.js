@@ -21,6 +21,20 @@
 //  console.log (" A difença de idade é" , suaIdade - idadeMelhorAmigo)
 
 // 2- 
-let numeroPar = Number( prompt( "Digite um número par"))
-console.log (numeroPar % 2)
-// Notei que todos os resultados do resto é 0. Quando inserido número impar o resultado do resto é 1.
+// let numeroPar = Number( prompt( "Digite um número par"))
+// console.log (numeroPar % 2)
+// // Notei que todos os resultados do resto é 0. Quando inserido número impar o resultado do resto é 1.
+
+// 3-
+// let idadeAnos = Number( prompt ("Digite sua idade em anos"))
+// console.log ( "Sua idade em meses é" , idadeAnos * 12)
+// console.log ( "Sua idade em dias é" , idadeAnos * 365)
+// console.log ( "Sua idade em horas é" , idadeAnos * 8760)
+
+// 4-
+let primeiroNum= Number (prompt("Digite um número"))
+let segundoNum= Number (prompt("Digite um número"))
+console.log (" O primeiro número é maior que o segundo?" ,primeiroNum > segundoNum )
+console.log (" O primeiro número é igual ao segundo?" , primeiroNum == segundoNum )
+console.log (" O primeiro número é divisível pelo segundo?" , primeiroNum % segundoNum == 0)
+console.log (" O segundo número é divisível pelo primeiro?" , segundoNum % primeiroNum == 0)
