@@ -37,12 +37,12 @@ console.log (almoco, "-" , boolean1)
 console.log (cafe, "-" , boolean)
 console.log (assistiu, "-" , boolean1) */
 
-let a = 10
-let b = 25
-let c 
-c = a
-a = b
-b = c
-console.log ("O novo valor de a é" , a )
-console.log ("O novo valor de b é" , b )
+// let a = 10
+// let b = 25
+// let c 
+// c = a
+// a = b
+// b = c
+// console.log ("O novo valor de a é" , a )
+// console.log ("O novo valor de b é" , b )
 
