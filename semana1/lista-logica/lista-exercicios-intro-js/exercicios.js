@@ -89,30 +89,40 @@ function retornaUltimoElemento(array) {
 function trocaPrimeiroEUltimo(array) {
   const novaArray = array [0]
   array [0] = array[array.length -1]
-  array[array.length -1] = array [0] 
+  array[array.length -1] = novaArray
+  return array
 
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-
-
+  return string1.toUpperCase() == string2.toUpperCase()
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
-  // implemente sua lógica aqui
-
+  const anoAtual = Number (prompt ("Qual é o ano atual"))
+  const anoNascimentoUsuario = Number (prompt ("Qual ano de seu nascimento"))
+  const anoEmissaoRG = Number (prompt ("Qual o ano de emissão da sua carteira de identidade"))
+  const idade = anoAtual - anoNascimentoUsuario 
+  const idadeRG = anoAtual - anoEmissaoRG
+  const comparacao20Anos = idade <= 20 && idadeRG >= 5
+  const comparacao50Anos = idade > 20 && idade <= 50 && idadeRG >= 10
+  const comparacaoMais50Anos = idade > 50 && idadeRG >= 15
+  console.log ( comparacao20Anos || comparacao50Anos || comparacaoMais50Anos)
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
-  // implemente sua lógica aqui
-
+  const anoBissexto = ano % 400 === 0
+  const anoBi = ano % 4 === 0 && ! (ano % 100 === 0 && ! anoBissexto)
+    return anoBi
 }
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
-  // implemente sua lógica aqui
-
+  const maisDe18 = prompt ("Você tem mais de 18 anos?") === "sim"
+  const ensinoMedio = prompt ("Você tem ensino médio completo?") === "sim"
+  const disponibilidade = prompt ("Você tem disponibilidade exclusivo") === "sim"
+  console.log ( maisDe18 && ensinoMedio && disponibilidade )
 }
