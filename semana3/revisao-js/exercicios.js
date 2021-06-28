@@ -30,19 +30,32 @@ function retornaNumerosPares(array) {
 // }
 
 // EXERCÍCIO 04
-// function retornaMaiorNumero(array) {
+function retornaMaiorNumero(array) {
 
-// }
+}
 
 // EXERCÍCIO 05
-// function retornaQuantidadeElementos(array) {
+function retornaQuantidadeElementos(array) {
+  const numeroDeElementos= array
+  return numeroDeElementos.length
 
-// }
+}
 
 // EXERCÍCIO 06
-// function retornaExpressoesBooleanas() {
+function retornaExpressoesBooleanas() {
+  const booleano1 = true
+  const booleano2 = false
+  const booleano3 = !booleano2 
+  const booleano4 = !booleano3 
 
-// }
+  const arrayRespostas = []
+  arrayRespostas[0] = booleano1 && booleano2 && !booleano4
+  arrayRespostas[1] = (booleano1 && booleano2) || !booleano3
+  arrayRespostas[2] = (booleano2 || booleano3) && (booleano4 || booleano1)
+  arrayRespostas[3] = !(booleano2 && booleano3) || !(booleano1 && booleano3)
+  arrayRespostas[4] = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
+  return arrayRespostas
+}
 
 // EXERCÍCIO 07
 // function retornaNNumerosPares(n) {
