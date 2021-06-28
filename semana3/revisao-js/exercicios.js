@@ -10,16 +10,22 @@
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-  let novoArray = [1, 2, 3, 4, 5, 6]
-  for (let i = 1; i < array.lenght; i++) {
-    if (i % 2 === 0) {
-      novoArray.push(i)
-    }
-  }
+  let novoArray = array.filter(item => {
+    if (item % 2 === 0)
+    return item
+  }).map(item => item * item)
   return novoArray
 }
+
+
 // EXERCÍCIO 03
-// function retornaNumerosPares(array) {
+function retornaNumerosPares(array) {
+  let arrayNuemerosPares = array.filter(item => {
+    if (item % 2 === 0)
+    return item
+  })
+  return arrayNuemerosPares
+}
 
 // }
 
