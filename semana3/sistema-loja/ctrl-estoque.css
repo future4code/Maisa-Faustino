@@ -1,8 +1,7 @@
-/* .imagens-produtos img{
-    width: 100px;
-    height: 100px; */
-
-
+.nome-empresa{
+    background-color: orange;
+    padding: 10px;
+}
 #imagem-cimento img{
     width: 100px;
 }
@@ -17,4 +16,30 @@
 }
 #imagem-torneira img{
     width: 100px;
+}
+#produto1{
+    text-align: center;
+    font-size: smaller;
+}
+#produto2{
+    text-align: center;
+    font-size: smaller;
+}
+#produto3{
+    text-align: center;
+    font-size: smaller;
+}
+#produto4{
+    text-align: center;
+    font-size: smaller;
+}
+#produto5{
+    text-align: center;
+    font-size: smaller;
+}
+.formatando-tabela{
+    border: solid;
+}
+.tabela-pontilhada{
+    border: 2px dotted blue;
 }
