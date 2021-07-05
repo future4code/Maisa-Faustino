@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: mediumvioletred;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between ;
+    align-items: center ;
+    margin: 5px;
+}
+.div-container{
+    display: flex;
+    justify-content: center;
+}
+#confeitaria{
+    display: flex;
+    align-self: flex-start;
+}
+
+.footer{
+    display: block;
+    background-color: mediumvioletred;
+    bottom: 0;
+    position: fixed;
+}
+.logo-bolinho{
+    margin: 5px;
+    width: 20px;
+
+}
+.botao{
+    margin: 10px;
+
+}
