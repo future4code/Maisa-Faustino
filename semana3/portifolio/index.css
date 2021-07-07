@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cor-do-body{
+    background-color: beige;
+}
+#bem-vindo{
+    text-align: center;
+}
