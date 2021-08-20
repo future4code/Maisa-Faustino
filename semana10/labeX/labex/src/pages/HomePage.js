@@ -16,12 +16,12 @@ export default function HomePage () {
   return(
     <HomePageContainer>
         <p>Bem-vindo</p>
-        <Link to={'/trips/list'}>
+        {/* <Link to={'/trips/list'}>
             <button>Ver viagens</button>
         </Link>
         <Link to={'/admin/trips/list'}>
             <button>Fazer Login</button>
-        </Link>
+        </Link> */}
     </HomePageContainer>
   )
 }

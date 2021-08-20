@@ -9,10 +9,14 @@ import TripDetailsPage from '../pages/TripDetailsPage'
 import {BrowserRouter , Switch , Route} from 'react-router-dom'
 
 
-export default function Router () {
+export const Router = () => {
   return(
     <BrowserRouter>
     <Switch>
+
+      <Route exact path={'/'}>
+      <HomePage/>
+      </Route>
 
       <Route exact path={'/admin/trips/list'}>
       <AdminHomePage/>
@@ -26,10 +30,7 @@ export default function Router () {
       <CreateTripPage/>
       </Route>
 
-      <Route exact path={'/'}>
-      <HomePage/>
-      </Route>
-
+      
       <Route exact path={'/trips/list'}>
       <ListTripsPage/>
       </Route>
