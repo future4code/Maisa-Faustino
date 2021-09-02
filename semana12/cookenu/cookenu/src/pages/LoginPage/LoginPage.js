@@ -1,60 +1,31 @@
 import React from "react"
 import {
-  InputsContainer,
   LogoImage,
   ScreenContainer,
   SignUpButtonContainer,
 } from "./styled"
 import logo from "../../assets/logo.png"
-import TextField from "@material-ui/core/TextField"
-import useForm from "../../hooks/useForm"
 import Button from "@material-ui/core/Button"
+import LoginForm from "./LoginForm"
+import { goToSignUp } from '../../routes/coordinator'
+import { useHistory } from 'react-router-dom'
+
 
 const LoginPage = () => {
-  const [form, onChange, clear] = useForm({ email: "", password: "" });
-  const onSubmitForm = (event) => {
-    event.preventDefault();
-  };
+  const history = useHistory()
+
   return (
     <ScreenContainer>
       <LogoImage src={logo} />
-      <InputsContainer>
-        <form onSubmitForm={onSubmitForm}>
-          <TextField
-            name={"email"}
-            value={form.email}
-            onChange={onChange}
-            label={"E-mail"}
-            variant={"outlined"}
-            fullWidth
-            margin={"normal"}
-            required
-            type={"email"}
-          />
-          <TextField
-            name={"password"}
-            value={form.password}
-            onChange={onChange}
-            label={"Senha"}
-            variant={"outlined"}
-            fullWidth
-            margin={"normal"}
-            required
-            type={"password"}
-          />
-          <Button
-            type={"submit"}
-            fullWidth
-            variant={"contained"}
-            color={"primary"}
-            margin={"normal"}
-          >
-            Fazer Login
-          </Button>
-        </form>
-      </InputsContainer>
+      <LoginForm/>
       <SignUpButtonContainer>
-        <Button type={"subimit"} fullWidth variant={"text"} color={"primary"}>
+        <Button
+          onClick={() => goToSignUp(history)}
+          type={"subimit"} 
+          fullWidth 
+          variant={"text"} 
+          color={"primary"}
+          >
           Não possui conta? Cadastre-se
         </Button>
       </SignUpButtonContainer>
