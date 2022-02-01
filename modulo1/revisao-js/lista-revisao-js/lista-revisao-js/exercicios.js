@@ -29,19 +29,51 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
-    const numerosPares = array.filter(pares => (pares * 2) == 0)
-    return numerosPares
- 
+    let novoArray = []
+    for (let i = 0;i < array.length;i++) {
+      if (array[i] % 2 === 0) {
+        novoArray.push(array[i] * array[i])
+      }
+    }
+    return novoArray
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
+    let maiorNumero = array[0]
+    for (let i = 0;i < array.length;i++) {
+      if (maiorNumero < array[i]) {
+        maiorNumero = array[i]
+      }
+    }
+    return maiorNumero
   
 }
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
 
+    let maiorNumero
+    let menorNumero
+    let maiorDivisivelPorMenor
+  
+    if (num1 > num2) {
+      maiorNumero = num1
+      menorNumero = num2
+    } else {
+      maiorNumero = num2
+      menorNumero = num1
+    }
+  
+    maiorDivisivelPorMenor = maiorNumero % menorNumero === 0
+  
+    const diferenca = maiorNumero - menorNumero
+  
+    return {
+      maiorNumero: maiorNumero,
+      maiorDivisivelPorMenor: maiorDivisivelPorMenor,
+      diferenca: diferenca
+    }
 }
 
 // EXERCÍCIO 08
@@ -61,10 +93,9 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]} ${filme.atores[1]}.`
 }
 
-// EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
    
 }
